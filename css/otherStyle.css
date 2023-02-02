@@ -1,0 +1,212 @@
+/* ============ Restaurant_Bar ============= */
+.container.center {
+    max-width: 1200px;
+    margin: -90px auto;
+    padding: 5px 20px;
+}
+
+.container.center .content {
+    background: rgba(255, 237, 212, 0.315);
+    padding-top: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.container.center .content:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.144);
+}
+
+.title {
+    text-align: center;
+    color: rgba(19, 71, 119, 0.945);
+    position: relative;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 25%;
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid rgba(19, 71, 119, 0.945);
+    border-left: 3px solid rgba(19, 71, 119, 0.945);
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: 25%;
+    height: 10px;
+    width: 10px;
+    border-bottom: 3px solid rgba(19, 71, 119, 0.945);
+    border-right: 3px solid rgba(19, 71, 119, 0.945);
+}
+
+.text {
+    color: rgba(128, 128, 128, 0.705);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.text::before {
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    background-color: rgba(19, 71, 119, 0.726);
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.container .img_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.bar_img {
+    margin: 0 0 -50px!important;
+}
+
+.container .img_container img {
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.39);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.container .img_container img:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 910px) {
+    .container .img_container img {
+        height: 190px;
+    }
+}
+
+/* ============ Evenementiel ============= */
+main {
+    background-color: whitesmoke;
+}
+
+.container.event {
+    max-width: 1000px;
+    margin-top: -50px;
+    margin-bottom: -100px !important;
+    border-left: 6px solid rgba(245, 222, 179, 0.178);
+    border-right: 6px solid rgba(245, 222, 179, 0.178);
+    border-bottom: 12px solid rgb(245, 222, 179);
+    border-top: 16px solid rgb(245, 222, 179);
+    background: linear-gradient(134deg, rgba(245, 222, 179, 0.178) 50%, rgb(245, 222, 179) );
+}
+
+/* ============ Sport ============= */
+
+.content_img {
+    border-radius: 2px;
+    top: -30px;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: url(../img/lamirol_img/sport.jpg) no-repeat center/cover;
+}
+main .content_img .breadcrumb-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    padding-top: 7%;
+}
+
+.sport_align {
+    justify-content: center;
+}
+
+.sport_img_hover {
+    transition: all 0.2s ease-in-out;
+}
+
+.sport_img_hover:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-bottom: -100px;
+    padding: 0 30px;
+    padding-top: 40px;
+    background: linear-gradient(134deg, rgba(245, 222, 179, 0) 50%, rgb(245, 222, 179) );
+}
+
+.infos .info_text {
+    flex: 1;
+    min-width: 210px;
+}
+
+.infos img {
+    flex: 1 1 10%;
+    height: 300px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+/* ============ Sport ============= */
+.content_img.pool {
+    background: url(../img/lamirol_img/pool.jpg) no-repeat center/cover;
+    height: 400px;
+    top: -50px;
+}
+
+main .content_img.pool .breadcrumb-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.39);
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    padding-top: 10%;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.center .circle {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.center .circle img {
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.center .circle img:hover {
+    opacity: 0.7;
+}
